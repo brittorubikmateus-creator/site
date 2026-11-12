@@ -1,0 +1,90 @@
+/*
+CORES
+#D92B04
+#45858C
+#D9C589
+#BF9765
+
+#8C1C3A
+#BF244E
+#D9765F
+#BF8821
+
+font-family:'Caveat', cursive;
+font-family:'EB Garamond', serif;
+
+font-family: 'Marhey', cursive;
+font-family: 'Mynerve', cursive;
+font-family: 'Roboto', sans-serif;
+
+
+*/
+/* HEADER*/
+
+@media screen and ( max-width: 1200px){
+    header{
+        max-width: 100%;
+        height: 90vh;
+        background:
+        linear-gradient(rgba(0,0,0,0.7), rgba(238, 243, 245, 0.2)),
+        url('../imagens/logo.png');
+
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        position: relative;
+    }
+    
+}
+
+@media screen and ( max-width: 600px){
+    header{
+        max-width: 100%;
+        height: 90vh;
+        background:
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)),
+        url('../imagen/.png');
+
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        position: relative;
+    }
+    
+}
+
+/*nave bar*/
+
+@media screen and (max-width: 1110px){
+    header nav#nav-esq ul.menu-principal li a{
+        font-size: 90%;
+    }
+
+}
+
+@media screen and (max-width: 970px){
+    header nav#nav-esq div#logo{
+        margin-left: 1rem;
+    }
+
+}
+
+
+/* menu hamburguer*/
+
+header nav#nav-esq{
+    justify-content: space-between;
+
+}
+
+header nav#nav-esq ul#icone-menu{
+    display: flex;
+    
+}
+
+header nav#nav-esq ul#icone-menuX{
+    display: none;
+    
+}

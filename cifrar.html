@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrador</title>
+</head>
+<body>
+    <h2>Cifrar</h2>
+    <label for="input">texto claro: <input type="text" id="input" name="cifrado()"></label>
+    <button onclick="cifrar()">Cifrar</button>
+    <p>texto claro: <output id="resultado"></output></p>
+
+    <h2>Decifrar</h2>
+    <label for="input2">texto cifrado: <input type="text" id="input2" name="decifrado()"></label>
+    <button onclick="decifrar()">Decifrar</button>
+    <p>texto cifrado: <output id="resultadodecifrado"></output></p>
+    <Script>
+
+      var textobase = " ";
+      var array = [];
+      var arrayNumeros = [];
+      var arrayNumerosCifrado = [];
+      var textoCifrado = " ";
+      
+      
+        function cifrar() {
+         textobase = document.getElementById("input").value;// Pegando valor do input
+         console.log(textobase);// Convertendo string para array
+
+         array = textobase.split('');// Convertendo string para array
+         console.log(array);// Convertendo string para array
+           
+         arrayNumeros = array.map(letra => letra.charCodeAt(0));// Convertendo letras para números
+         console.log(arrayNumeros);// Convertendo string para array
+
+         
+         arrayNumerosCifrado = arrayNumeros.map(numero => numero + 1);// Convertendo números para letras
+         console.log(arrayNumerosCifrado);// Convertendo números para letras
+
+         
+         textoCifrado = String.fromCharCode.apply(null, arrayNumerosCifrado);// Convertendo números para letras'  
+         console.log(textoCifrado);// Convertendo números para letras
+         
+        
+         document.getElementById("resultado").innerText = textoCifrado;// Convertendo números para letras
+         
+
+
+        }
+
+
+        function decifrar(){
+         textobase = document.getElementById("input2").value;// Pegando valor do input
+         console.log(textobase);// Convertendo string para array
+
+         arrayDeLetra = textobase.split('');// Convertendo string para array
+         console.log(arrayDeLetra);// Convertendo string para array
+           
+         arrayNumeros = arrayDeLetra.map(letra => letra.charCodeAt(0));// Convertendo letras para números
+         console.log(arrayNumeros);// Convertendo string para array
+
+         
+         arrayNumerosDecifrado = arrayNumeros.map(numero => numero - 1); // Subtraindo 1 de cada número
+         console.log(arrayNumerosDecifrado);// Convertendo números para letras
+
+         
+         textoDecifrado = String.fromCharCode.apply(null, arrayNumerosDecifrado); // Convertendo números para letras
+         console.log(textoDecifrado);
+         
+        
+         document.getElementById("resultadodecifrado").innerText = textoDecifrado;// Converswtendo números para letras
+
+
+        }
+    </Script>
+
+
+</body>
+</html>

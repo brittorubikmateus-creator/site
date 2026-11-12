@@ -1,0 +1,226 @@
+/*
+CORES
+#D92B04
+#45858C
+#D9C589
+#BF9765
+
+#8C1C3A
+#BF244E
+#D9765F
+#BF8821
+
+
+font-family:'Caveat', cursive;
+font-family:'EB Garamond', serif;
+font-family: 'Marhey', cursive;
+font-family: 'Mynerve', cursive;
+font-family: 'Roboto', sans-serif;
+
+
+
+*/
+
+*{
+    padding: 0; /* Define o espaço */
+    margin: 0; /* a marge */
+    box-sizing: border-box; /* que define como o navegador calcula a largura e a altura de um elemento. */
+
+ /*--------------------------------------------*/
+ /*               HEADER                      */
+ /*--------------------------------------------*/
+}
+header{
+    max-width: 1000%;
+    height: 90vh; /*vh significa Viewport Height — altura da área visível do navegador. */
+    background:linear-gradient(rgba(241, 239, 239, 0.7),rgba(0,0,0,0.2)),
+    url('../imagem/logo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+    position: relative;
+
+}
+/*----------------nave---------------paramos aqui-------------*/
+
+
+header nav#nav-esq{
+  width: 100%;
+  height: 150px;
+  background-color:#fdfdfd ;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+} 
+
+header nav#nav-esq div#logo{
+    width: 20%;
+    height: 80px;
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+header nav#nav-esq div#logo img{
+    max-width: 80%;
+    max-height: 150px;
+    height: auto;
+
+
+}
+
+/*-----MENU HAMBURGUER----*/
+header nav#nav-esq ul#icone-menu{
+     display:none;/*DEIXAR EM COMENTARIO E DEPOIS POR NOVAMENTE PRA TIRAR ELE DA TELA*/
+}
+
+header nav#nav-esq ul#icone-menu li{
+    list-style: none;
+}
+
+header nav#nav-esq ul#icone-menu li ion-icon{
+    font-size: 50px;
+    color: #a05656;
+    margin-right: 2rem;
+}
+
+header nav#nav-esq ul#menu-principal{
+    margin-left: 5rem;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header nav#nav-esq ul#menu-principal li{
+    list-style: none;
+    margin-right: 2rem;
+}
+
+header nav#nav-esq ul#menu-principal a{ /* tira o sublinhado e coloca uma cor branca*/
+    text-decoration: none;
+    color: #030202;
+    font-size: 150%;
+    text-shadow: 4px 6px 10px #000;
+    padding-bottom: 10px;
+    transition: .3s ease-out;
+}
+
+header nav#nav-esq ul#menu-principal li a:hover{
+    opacity: .6;
+} 
+
+/* menu hamburguer */
+
+header nav#nav-esq ul#icone-menu{
+    display: none;
+}
+
+header nav#nav-esq ul#icone-menu li{
+    list-style: none;
+}
+
+header nav#nav-esq ul#icone-menu li ion-icon{
+    font-size: 50px;
+    color: #FFF;
+    margin-right: 2rem;
+}
+/* //parte do video */
+h1{
+  font-size: 400%;
+  color: #f3eded;
+  text-shadow: 4px 6px 10px #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.btn-voltar {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #060708;
+  color: #140d0d;
+  text-decoration: none;
+  border-radius: 8px;
+  font-family: sans-serif;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.2s;
+}
+.btn-voltar:hover {
+  background: #fdfafa;
+  transform: translateX(-3px);
+}
+/* //parte do cadastor */
+p{
+  font-size: 20px;
+  color: #f3eded;
+  text-shadow: 4px 6px 10px #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+body {
+  background: #1b1b1b;
+  font-family: Arial, sans-serif;
+}
+
+
+.card {
+  position: relative;       /* base para posicionar o texto e o degradê */
+  width: 220px;
+  height: 120px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  columns: center;
+}
+
+/* degradê escuro de baixo para cima */
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;                 /* cobre o card inteiro */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent 60%);
+}
+
+.titulo {
+  position: absolute;
+  left: 16px;
+  bottom: 14px;
+  margin: 0;
+  z-index: 1;               /* fica acima do degradê */
+  color: white;
+  font-size: 16px;
+}
+ /* //historia */
+.historia{
+  font-size: 400%;
+  color: #f3eded;
+  text-shadow: 4px 6px 10px #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

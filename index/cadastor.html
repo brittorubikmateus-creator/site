@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/cadastor.css">
+    <title>alistamento mundial</title>
+</head>
+<body>
+    <img class="logo" src="../imagem/logo.png" alt="Imagem de fundo" style="width: 100%; height: auto;">
+    <h1 class="cadastor">Alistamento Mundial</h1>
+    <p class="c">Bem-vindo ao nosso formulário de alistamento!
+    Quartel-General da Marinha, Marineford. Preencha a ficha para se tornar um recruta e proteger os 
+    mares.
+    </p><br>
+    <form action="index.html" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" required><br><br>
+
+        <label for="genero">Ilha Natal:</label>
+        <input type="text" id="genero" name="ilha" required><br><br>
+        
+        <label for="genero">Mar de Origem:</label>  
+        <select id="mar" name="mar" required>
+            <option value="mar do leste">East Blue</option>
+            <option value="mar do oeste">West Blue</option> 
+            <option value="mar do norte">North Blue</option>
+            <option value="mar do sul">South Blue</option>
+            <option value="mar do sul">Grand Line</option>
+            <option value="mar do sul">New World</option>
+        </select><br><br>
+
+        <h1>habilidades</h1>
+
+        <label for="habilidade1">estilo de comdate:</label>
+        <input type="text" id="habilidade1" name="habilidade1" required><br><br>
+
+        <label for="habilidade2">comece Haki:</label>
+        <select id="habilidade2" name="habilidade2" required>
+            <option value="nenhum">Nenhum</option>
+            <option value="haki de observação">Haki de Observação</option>
+            <option value="haki de armas">Haki de Armas</option>
+            <option value="haki de rei">Haki de Rei</option>
+        </select><br><br>
+
+        <h1>interesses um setor do governo</h1>
+        <label for="setor">setor do governo:</label>
+        <select id="setor" name="setor" required>
+            <option value="marinha">Marinha</option>
+            <option value="exército">Impel Down</option>
+            <option value="polícia">Enies Lobby</option>
+        </select><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <button class="btn-voltar"><a href="index.html">volta ao menu principal</a></button>
+</body>
+</html>
